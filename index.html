@@ -3,252 +3,413 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Resume </title>
+    <meta name="description" content="Musab Aziz — Frontend Developer. Premium minimalist portfolio and CV.">
+    <title>Musab Aziz — Frontend Developer</title>
 
+    <!-- Modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 p-0 mx-auto">
-                        <div class="header-col colum-1 p-5">
-                            <div class="name">
-                                <h2>Musab Aziz</h2>
-                            </div>
-                            <div class="designation">
-                                <h1>FrontEnd<br><span>Developer</span></h1>
-                            </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="brand">Musab<span>Aziz</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-sm nav-cta">Hire Me</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <p class="eyebrow"><span class="dot"></span> Karachi, Pakistan</p>
+                <h1 class="hero-title">Frontend<br><em>Developer</em></h1>
+                <p class="hero-sub">I craft fast, accessible and pixel-perfect web experiences with
+                    HTML, CSS, JavaScript and WordPress — turning ideas into elegant interfaces.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>5+</strong><span>Years Experience</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><strong>40+</strong><span>Projects Shipped</span></div>
+                    <div class="stat-divider"></div>
+                    <div class="stat"><strong>4</strong><span>Companies</span></div>
+                </div>
+            </div>
+            <div class="hero-visual reveal delay-1">
+                <div class="portrait-frame">
+                    <img src="img/musab.webp" alt="Portrait of Musab Aziz">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== ABOUT / OBJECTIVE ===================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow"><span class="dot"></span> About Me</p>
+                <h2 class="section-title">Objective</h2>
+            </div>
+            <div class="about-grid">
+                <div class="card objective-card reveal">
+                    <i class="fa-solid fa-bullseye card-icon"></i>
+                    <p>I want to work for an organization which provides me the opportunity to improve my
+                        skills and knowledge to grow along with the organization. I would like to explore
+                        and share my fresh knowledge between staff.</p>
+                </div>
+                <div class="card profile-card reveal delay-1">
+                    <h3>Profile Summary</h3>
+                    <ul class="check-list">
+                        <li>Coded using HTML, CSS and JavaScript for both mobile and desktop platforms, producing websites compatible with multiple browsers.</li>
+                        <li>Designed and updated layouts to meet usability and performance requirements.</li>
+                        <li>Tested web-based product functionality and delivered iterations to customers.</li>
+                        <li>Always willing to innovate new things which can improve existing technology.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS + CONTACT INFO ===================== -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="two-col">
+                <div class="reveal">
+                    <div class="section-head">
+                        <p class="eyebrow"><span class="dot"></span> Expertise</p>
+                        <h2 class="section-title">Skills</h2>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill">
+                            <div class="skill-top"><span>HTML</span><span class="skill-pct">Expert</span></div>
+                            <div class="bar"><div class="bar-fill" style="--w:95%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-top"><span>CSS</span><span class="skill-pct">Advanced</span></div>
+                            <div class="bar"><div class="bar-fill" style="--w:85%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-top"><span>JavaScript / jQuery</span><span class="skill-pct">Intermediate</span></div>
+                            <div class="bar"><div class="bar-fill" style="--w:60%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-top"><span>Python</span><span class="skill-pct">Intermediate</span></div>
+                            <div class="bar"><div class="bar-fill" style="--w:60%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-top"><span>PHP</span><span class="skill-pct">Basic</span></div>
+                            <div class="bar"><div class="bar-fill" style="--w:40%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-top"><span>C Language</span><span class="skill-pct">Basic</span></div>
+                            <div class="bar"><div class="bar-fill" style="--w:40%"></div></div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 p-0 mx-auto">
-                        <div class="header-col colum-2">
-                            <div class="logo">
-                                <img src="img/new-image.webp" alt="musab's pics">
-                            </div>
-                        </div>
+                    <div class="chips">
+                        <span class="chip">WordPress</span>
+                        <span class="chip">Responsive Design</span>
+                        <span class="chip">Cross-browser</span>
+                        <span class="chip">UI Maintenance</span>
                     </div>
-                    <div class="col-md-4 col-sm-12 p-0 mx-auto">
-                        <div class="header-col colum-3">
-                            <div class="description p-5">
-                                <h4>OBJECTIVE</h4>
-                                <p>I want to work for an organization which provides me the opportunity to improve my
-                                    skills and knowledge to growth along with the organization. I would like to explore
-                                    and share my fresh knowledge between staff.</p>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="reveal delay-1">
+                    <div class="section-head">
+                        <p class="eyebrow"><span class="dot"></span> Personal Details</p>
+                        <h2 class="section-title">Contact</h2>
+                    </div>
+                    <div class="card contact-card">
+                        <ul class="info-list">
+                            <li><i class="fa-solid fa-phone"></i><div><span>Phone</span><a href="tel:+923408684334">0340-8684334</a></div></li>
+                            <li><i class="fa-solid fa-id-card"></i><div><span>CNIC</span>42401-3286076-7</div></li>
+                            <li><i class="fa-solid fa-envelope"></i><div><span>Email</span><a href="mailto:musabaziz123bs@gmail.com">musabaziz123bs@gmail.com</a></div></li>
+                            <li><i class="fa-solid fa-location-dot"></i><div><span>Location</span>House# R-45 Sector 8, North Karachi-75850, Pakistan</div></li>
+                            <li><i class="fa-solid fa-cake-candles"></i><div><span>Date of Birth</span>July 20th, 1995</div></li>
+                            <li><i class="fa-solid fa-flag"></i><div><span>Nationality</span>Pakistani</div></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </header>
-        <section class="biodata">
-            <div class="container">
-                <div class="inner-biodata">
-                    <div class="contact main-bio colum-1">
-                        <h2><strong>contact</strong></h2>
-                        <div class="phone">
-                            <p><a href="tel:+923408684334"><i class="fa fa-phone"></i>&nbsp; 0340-8684334</a></p>
-                            <p><i class="fa fa-id-card"></i>&nbsp;42401-3286076-7</p>
-                            <p><a href="mailto:musabaziz123bs@gmail.com"><i class="fa fa-envelope"></i>&nbsp;
-                                    musabaziz123bs@gmail.com</a></p>
-                                    <p><i class="fa fa-map-marker"></i>&nbsp; House# R-45 Sector 8, North Karachi- 75850, Pakistan </p>
-                            <p><i class="fa fa-birthday-cake"></i>&nbsp;July 20th 1995 </p>
-                            <p><i class="fa fa-flag"></i>&nbsp;Pakistani</p>
-                        </div>
-                    </div>
-                    <div class="skill main-bio colum-2">
-                        <h2><strong>skill</strong></h2>
-                        <ul>
-                            <li>HTML <div class="stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-                            </li>
-                            <li>Css <div class="stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </li>
-                            <li>JQuery <div class="stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </li>
-                            <li>PHP <div class="stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </li>
-                            <li>Python <div class="stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </li>
-                            <li>C-language <div class="stars">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="Education main-bio colum-3">
-                        <h2><strong>Education</strong></h2>
-                        <div class="inner-edu">
-                            <div class="eduction-holder">
-                                <div class="year">
-                                    <p><strong>2018</strong></p>
-                                </div>
-                                <div class="institute">
-                                    <p>Karachi University</p>
-                                </div>
-                                <div class="degree">
-                                    <p>M.sc(Electronics)</p>
-                                </div>
-                            </div>
-                            <div class="eduction-holder">
-                                <div class="year">
-                                    <p><strong>2012</strong></p>
-                                </div>
-                                <div class="institute">
-                                    <p>Govt. Degree Boys Gulshan College</p>
-                                </div>
-                                <div class="degree">
-                                    <p>Pre-Engineering</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow"><span class="dot"></span> Academics</p>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="edu-grid">
+                <div class="card edu-card reveal">
+                    <span class="year-badge">2018</span>
+                    <h3>M.Sc. Electronics</h3>
+                    <p class="muted">Karachi University</p>
+                </div>
+                <div class="card edu-card reveal delay-1">
+                    <span class="year-badge">2012</span>
+                    <h3>Pre-Engineering</h3>
+                    <p class="muted">Govt. Degree Boys Gulshan College</p>
                 </div>
             </div>
-        </section>
-        <section class="work-exp">
-            <div class="main-heading">
-                <h1>WORK EXPERIENCE</h1>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow"><span class="dot"></span> Career</p>
+                <h2 class="section-title">Work Experience</h2>
             </div>
-            <div class="container">
-                <div class="main-work-exp">
-                    <div class="inner-work-exp">
-                        <h2 class="sub-heading">Front-end Developer:</h2>
-                        <span><strong>2022</strong></span>&nbsp;
-                        <p class="company">BCI NEW MEDIA - Karachi </p>
-                        <p class="duration">Feb, 2022 to Present</p>
-                        <ul class="work-designation">
-                            <li>Senior Frontend developer</li>
-                            <li>WordPress (maintenance)</li>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <div class="tl-head">
+                            <h3>Senior Frontend Developer</h3>
+                            <span class="badge">2022 — Present</span>
+                        </div>
+                        <p class="company"><i class="fa-solid fa-building"></i> BCI New Media — Karachi</p>
+                        <p class="duration">Feb 2022 to Present</p>
+                        <ul class="bullet-list">
+                            <li>Lead frontend development across client projects</li>
+                            <li>WordPress maintenance &amp; performance improvements</li>
                         </ul>
                     </div>
-                    <div class="inner-work-exp">
-                        <h2 class="sub-heading">Front-end Developer:</h2>
-                        <span><strong>2021</strong></span>&nbsp;
-                        <p class="company">Symits - Karachi </p>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <div class="tl-head">
+                            <h3>Frontend Developer</h3>
+                            <span class="badge">2020 — 2022</span>
+                        </div>
+                        <p class="company"><i class="fa-solid fa-building"></i> Symits — Karachi</p>
                         <p class="duration">Sept 2020 to Feb 2022</p>
-                        <ul class="work-designation">
-                            <li>Frontend developer</li>
-                            <li>WordPress (maintenance)</li>
+                        <ul class="bullet-list">
+                            <li>Frontend developer for agency clients</li>
+                            <li>WordPress maintenance &amp; theme updates</li>
                         </ul>
                     </div>
-                    <div class="inner-work-exp">
-                        <h2 class="sub-heading">Front-end Developer:</h2>
-                        <span><strong>2020</strong></span>&nbsp;
-                        <p class="company">IT-Pyramid – Karachi </p>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <div class="tl-head">
+                            <h3>Junior Frontend Developer</h3>
+                            <span class="badge">2019 — 2020</span>
+                        </div>
+                        <p class="company"><i class="fa-solid fa-building"></i> IT-Pyramid — Karachi</p>
                         <p class="duration">December 2019 to March 2020</p>
-                        <ul class="work-designation">
-                            <li>Junior frontend developer&nbsp;Work as a Internee</li>
+                        <ul class="bullet-list">
+                            <li>Worked as an intern, promoted to junior frontend developer</li>
                         </ul>
                     </div>
-                    <div class="inner-work-exp">
-                        <h2 class="sub-heading">WordPress Developer:</h2>
-                        <span><strong>2019</strong></span>&nbsp;
-                        <p class="company">EUGBS – Karachi</p>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <div class="tl-head">
+                            <h3>Junior WordPress Developer</h3>
+                            <span class="badge">2019</span>
+                        </div>
+                        <p class="company"><i class="fa-solid fa-building"></i> EUGBS — Karachi</p>
                         <p class="duration">September 2019 to November 2019</p>
-                        <ul class="work-designation">
-                            <li>Work as Junior WordPress Developer.</li>
+                        <ul class="bullet-list">
+                            <li>Site builds, content management and plugin support</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="work-exp">
-            <div class="main-heading">
-                <h1>PROFILE</h1>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="eyebrow"><span class="dot"></span> Portfolio</p>
+                <h2 class="section-title">Selected Projects</h2>
+                <p class="section-sub">Live sites I have built and maintained. Click any card to visit.</p>
             </div>
-            <div class="container">
-                <div class="main-work-exp">
-                    <div class="inner-work-exp">
-                        <h2 class="sub-heading">PROFILE SUMMARY</h2>
-                        <ul>
-                            <li>Coded using HTML, CSS and JavaScript to develop features for both mobile and desktop platforms. Produced websites compatible with multiple browsers.</li>
-                            <li>Designed and updated layouts to meet usability and performance requirements.</li>
-                            <li>Tested web-based product functionality and delivered iterations to customers.</li>
-                            <li>Always willing to innovate the new things which can improve the existing technology.</li>
-                        </ul>
+            <div class="project-grid">
+
+                <a class="project-card reveal" href="https://simpledesignkitchenandbath.com/" target="_blank" rel="noopener">
+                    <div class="pc-cover c1"><i class="fa-solid fa-kitchen-set"></i></div>
+                    <div class="pc-body">
+                        <h3>Simple Design Kitchen &amp; Bath</h3>
+                        <p class="muted">Kitchen &amp; bath remodeling — marketing site</p>
+                        <div class="tags"><span>WordPress</span><span>Responsive</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                     </div>
+                </a>
+
+                <a class="project-card reveal" href="https://oceancountyirishfestival.com/" target="_blank" rel="noopener">
+                    <div class="pc-cover c2"><i class="fa-solid fa-music"></i></div>
+                    <div class="pc-body">
+                        <h3>Ocean County Irish Festival</h3>
+                        <p class="muted">Event landing site with program &amp; tickets</p>
+                        <div class="tags"><span>WordPress</span><span>Events</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://montgomeryfirerescue.com/" target="_blank" rel="noopener">
+                    <div class="pc-cover c3"><i class="fa-solid fa-fire-extinguisher"></i></div>
+                    <div class="pc-body">
+                        <h3>Montgomery Fire Rescue</h3>
+                        <p class="muted">Non-profit organizational website</p>
+                        <div class="tags"><span>WordPress</span><span>Non-profit</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://burkecontractors.com/" target="_blank" rel="noopener">
+                    <div class="pc-cover c4"><i class="fa-solid fa-helmet-safety"></i></div>
+                    <div class="pc-body">
+                        <h3>Burke Contractors</h3>
+                        <p class="muted">Construction services &amp; portfolio site</p>
+                        <div class="tags"><span>WordPress</span><span>Business</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://burgernextofficial.com/" target="_blank" rel="noopener">
+                    <div class="pc-cover c5"><i class="fa-solid fa-burger"></i></div>
+                    <div class="pc-body">
+                        <h3>Burger Next</h3>
+                        <p class="muted">Restaurant brand site with menus</p>
+                        <div class="tags"><span>Restaurant</span><span>Menus</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://juicychuck.pk/" target="_blank" rel="noopener">
+                    <div class="pc-cover c6"><i class="fa-solid fa-drumstick-bite"></i></div>
+                    <div class="pc-body">
+                        <h3>Juicy Chuck</h3>
+                        <p class="muted">Chicken restaurant — Karachi</p>
+                        <div class="tags"><span>Restaurant</span><span>WordPress</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://2gb.com.pk/" target="_blank" rel="noopener">
+                    <div class="pc-cover c7"><i class="fa-solid fa-utensils"></i></div>
+                    <div class="pc-body">
+                        <h3>2 Guys Bistro</h3>
+                        <p class="muted">Bistro dining experience website</p>
+                        <div class="tags"><span>Restaurant</span><span>Booking</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://karachibbq.pk/" target="_blank" rel="noopener">
+                    <div class="pc-cover c8"><i class="fa-solid fa-fire"></i></div>
+                    <div class="pc-body">
+                        <h3>Karachi BBQ</h3>
+                        <p class="muted">BBQ restaurant — menus &amp; outlets</p>
+                        <div class="tags"><span>Restaurant</span><span>Menus</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://www.cafemargos.com/" target="_blank" rel="noopener">
+                    <div class="pc-cover c1"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="pc-body">
+                        <h3>Cafe Margos</h3>
+                        <p class="muted">Coffee house brand website</p>
+                        <div class="tags"><span>Cafe</span><span>WordPress</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="https://burgerpoint.pk/" target="_blank" rel="noopener">
+                    <div class="pc-cover c2"><i class="fa-solid fa-bread-slice"></i></div>
+                    <div class="pc-body">
+                        <h3>Burger Point</h3>
+                        <p class="muted">Fast-food chain promotional site</p>
+                        <div class="tags"><span>Restaurant</span><span>Promo</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+                <a class="project-card reveal" href="http://host.symits.com/~symbioshostcpane/beta/alfajrfoods" target="_blank" rel="noopener">
+                    <div class="pc-cover c3"><i class="fa-solid fa-wheat-awn"></i></div>
+                    <div class="pc-body">
+                        <h3>Alfajr Foods</h3>
+                        <p class="muted">Halal food products storefront</p>
+                        <div class="tags"><span>E-commerce</span><span>WordPress</span></div>
+                        <span class="pc-link">Visit site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT CTA ===================== -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="card cta-card reveal">
+                <h2>Let's build something <em>great</em> together</h2>
+                <p class="muted">Available for freelance and full-time frontend opportunities.</p>
+                <div class="hero-actions" style="justify-content:center">
+                    <a href="mailto:musabaziz123bs@gmail.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i>&nbsp; Email Me</a>
+                    <a href="tel:+923408684334" class="btn btn-ghost"><i class="fa-solid fa-phone"></i>&nbsp; 0340-8684334</a>
                 </div>
             </div>
-        </section>
-        <section class="work-exp live-project">
-            <div class="main-heading">
-                <h1>PORTFOLIO</h1>
-            </div>
-            <div class="container">
-                <div class="main-work-exp">
-                    <div class="inner-work-exp">
-                        <h2 class="sub-heading">PROJECTS</h2>
-                        <span><strong>Live Links</strong></span>
-                        <ul class="work-designation main-project">
-                            <li><a href="https://simpledesignkitchenandbath.com/" target="_blank">Simple design kitchen and bath</a></li>
-                            <li><a href="https://oceancountyirishfestival.com/" target="_blank">Oceancounty Irish Festival</a></li>
-                            <li><a href="https://montgomeryfirerescue.com/" target="_blank">Montgomery Fire Rescue</a></li>
-                            <li><a href="https://burkecontractors.com/" target="_balnk">Burke Contractors</a></li>
-                            <li><a href="https://burgernextofficial.com/" target="_balnk">Burger Next</a></li>
-                            <li><a href="https://juicychuck.pk/" target="_balnk">Juicy Chuck</a></li>
-                            <li><a href="https://2gb.com.pk/" target="_balnk">2 Guys Bistro</a></li>
-                            <li><a href="https://karachibbq.pk/" target="_balnk">Karachi BBQ</a></li>
-                            <li><a href="https://www.cafemargos.com/" target="_balnk">Cafe Margos</a></li>
-                            <li><a href="https://burgerpoint.pk/" target="_balnk">Burger Point</a></li>
-                            <li><a href="http://host.symits.com/~symbioshostcpane/beta/alfajrfoods" target="_blank">Alfajrfoods</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 Musab Aziz. All rights reserved.</p>
+            <a href="#home" class="back-top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
 
-        <footer class="footer">
-            <div class="copyright text-center p-3">
-                <p>©copyright 2022. All Right Reserved By Musab Aziz :)</p>
-            </div>
-        </footer>
-    </div>
+    <script>
+        // Navbar shadow on scroll
+        const navbar = document.getElementById('navbar');
+        addEventListener('scroll', () => navbar.classList.toggle('scrolled', scrollY > 10));
 
+        // Mobile menu
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-
-
+        // Scroll reveal animations
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
 </body>
 
 </html>
